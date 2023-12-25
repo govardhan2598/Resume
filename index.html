@@ -6,13 +6,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
     body {
       font-family: 'Roboto', sans-serif;
       line-height: 1.6;
       color: #333;
       background: linear-gradient(45deg, #fcf5f5, #f5f5f5);
-      margin: 20px;
+      margin: 0;
+      padding: 0;
+      size: A4;
+      width: 210mm;
+      height: 297mm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      width: 80%; /* Adjust the width of the content container */
       padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
@@ -27,8 +43,6 @@
       margin-right: 10px;
       vertical-align: middle;
     }
-
-    /* Rest of your CSS styles */
 
     h2 {
       color: #004d40;
@@ -96,6 +110,15 @@
       border-left: 6px solid #1a237e;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+	
+	h1, h2, h3, h4 {
+      page-break-inside: avoid;
+    }
+
+    table {
+      page-break-inside: auto;
+    }
+	
   </style>
 </head>
 <body>
@@ -115,7 +138,7 @@
   </ul>
   
   <h2>Professional Experience</h2>
-  <div class="highlight">
+  <div class="content">
     <h3>IDEYALABS TECH LLP (April 2021 – Present)</h3>
     <ul>
       <li>Experienced DevOps Engineer with 3 years of experience managing and building systems within a distributed environment.</li>
@@ -180,7 +203,7 @@
   </table>
 
   <h2>Projects</h2>
-  <div class="project">
+  <div class="content">
     <h3>Project-1: Coyni (DevOps Engineer)</h3>
     <p class="highlight">Summary: Coyni serves as a platform enabling customers to load currency into their e-wallets using various payment methods, allowing instant transactions. This platform comprises Admin, Customer, and Merchant modules, offering a range of system administration, user management, transaction, and backend queue processing services.</p>
     <h4>Responsibilities:</h4>
@@ -198,7 +221,7 @@
     <li>Managed ECS clusters for container orchestration and actively participated in team meetings</li>
     </ul>
   </div>
-  <div class="project">
+  <div class="content">
     <h3>Project-2: Ferris (DevOps Engineer)</h3>
     <p class="highlight">Summary: Ferris, a multimedia broadcasting platform, necessitated an auto-update feature and a temporary testing environment due to its closed nature.</p>
     <h4>Responsibilities:</h4>
@@ -209,7 +232,7 @@
     <li>Provided status updates via Jira ticketing</li>
     </ul>
   </div>
-  <div class="project">
+  <div class="content">
     <h3>Project-3: Transact EU (DevOps Engineer)</h3>
     <p class="highlight">Summary: Transact EU, a payment gateway for European merchants, features a Frontend portal for transaction monitoring and management.</p>
     <h4>Responsibilities:</h4>
