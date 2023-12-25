@@ -3,16 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <title>Govardhan A - DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    /* Add your custom CSS styles here */
-    /* Example: table, th, td, h2, p { ... } */
+     body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(45deg, #f2f3f4, #ffffff);
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h1 img {
+      width: 100px; /* Adjust image width */
+      height: 100px; /* Adjust image height */
+      border-radius: 50%; /* Make the image circular */
+      margin-right: 10px;
+      vertical-align: middle; /* Align image vertically with text */
+    }
+
+    h2 {
+      color: #0072c6;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      color: #e91e63;
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    h4 {
+      color: #ff9800;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      background-color: #f5f5f5;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .icon {
+      margin-right: 5px;
+      color: #009688; /* Adjust icon color */
+    }
+
+    .highlight {
+      background-color: #ffffcc;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project {
+      margin-bottom: 15px;
+      padding: 20px;
+      background: linear-gradient(45deg, #f3e5f5, #fffcdc);
+      border-left: 6px solid #0072c6;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
-  <h1>Govardhan A - DevOps Engineer</h1>
-  <p>#69/1, 1st cross sai city layout near sri sai enclave apartment halehalli, Bengaluru, Karnataka 560036, India.</p>
-  <p>8762482598</p>
-  <p>govardhan.ashwath1998@gmail.com</p>
+  <h1><img src="https://media.licdn.com/dms/image/D5603AQGZtk2CIJtxHQ/profile-displayphoto-shrink_200_200/0/1703443010767?e=1709164800&v=beta&t=Aya4FE5esj5_XLgre5gs40v7FfcIFAIBW_B4Le0mIrw" alt="Profile Image">Govardhan A - DevOps Engineer</h1>
+  <p><i class="fas fa-map-marker-alt icon"></i> #69/1, 1st cross sai city layout near sri sai enclave apartment halehalli, Bengaluru, Karnataka 560036, India.</p>
+  <p><i class="fas fa-phone-alt icon"></i> 8762482598</p>
+  <p><i class="far fa-envelope icon"></i> govardhan.ashwath1998@gmail.com</p>
   
   <h2>Professional Summary</h2>
   <ul>
@@ -25,21 +113,23 @@
   </ul>
   
   <h2>Professional Experience</h2>
-  <h3>IDEYALABS TECH LLP (April 2021 – Present)</h3>
-  <ul>
-    <li>Experienced DevOps Engineer with 3 years of experience managing and building systems within a distributed environment.</li>
+  <div class="highlight">
+    <h3>IDEYALABS TECH LLP (April 2021 – Present)</h3>
+    <ul>
+      <li>Experienced DevOps Engineer with 3 years of experience managing and building systems within a distributed environment.</li>
     <li>Proven ability to develop, maintain, and optimize CI/CD pipelines for microservices.</li>
     <li>Skilled in leveraging a wide range of automation tools such as Jenkins, and Terraform</li>
-  </ul>
+    </ul>
+  </div>
 
   <h2>Education</h2>
-  <p>Bachelor of Engineering in Telecommunication, Vemana Institute of Technology at Bengaluru (August 2016 - August 2020)</p>
+  <p class="highlight">Bachelor of Engineering in Telecommunication, Vemana Institute of Technology at Bengaluru (August 2016 - August 2020)</p>
 
-   <h2>Key Skills</h2>
-  <table border="1">
+  <h2>Key Skills</h2>
+  <table>
     <tr>
-      <th>Category</th>
-      <th>Tools / Technologies</th>
+      <th style="border-width:1px;border-style:solid;border-color:#ddd;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;background-color:#f2f2f2;" >Category</th>
+      <th style="border-width:1px;border-style:solid;border-color:#ddd;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;background-color:#f2f2f2;" >Tools / Technologies</th>
     </tr>
     <tr>
       <td>Build Tools</td>
@@ -88,11 +178,12 @@
   </table>
 
   <h2>Projects</h2>
-  <h3>Project-1: Coyni (DevOps Engineer)</h3>
-  <p>Summary: Coyni serves as a platform enabling customers to load currency into their e-wallets using various payment methods, allowing instant transactions. This platform comprises Admin, Customer, and Merchant modules, offering a range of system administration, user management, transaction, and backend queue processing services.</p>
-  <h4>Responsibilities:</h4>
-  <ul>
-    <li>Set up AWS infrastructure for different environments like DEV, QA, STG, SAT, and UAT</li>
+  <div class="project">
+    <h3>Project-1: Coyni (DevOps Engineer)</h3>
+    <p class="highlight">Summary: Coyni serves as a platform enabling customers to load currency into their e-wallets using various payment methods, allowing instant transactions. This platform comprises Admin, Customer, and Merchant modules, offering a range of system administration, user management, transaction, and backend queue processing services.</p>
+    <h4>Responsibilities:</h4>
+    <ul>
+     <li>Set up AWS infrastructure for different environments like DEV, QA, STG, SAT, and UAT</li>
     <li>Created AWS S3 buckets for Coyni resources and provided static web hosting for Merchant simulators</li>
     <li>Developed separate Docker image repositories (ECR) based on distinct environments</li>
     <li>Managed IAM roles, granting Docker image permissions, and configured aws-cli for image operations</li>
@@ -103,26 +194,29 @@
     <li>Designed AWS Lambda functions and API-Gateway endpoints for serverless triggers</li>
     <li>Established WAF web-acl for public resources and maintained ELK dashboards for microservices' logs</li>
     <li>Managed ECS clusters for container orchestration and actively participated in team meetings</li>
-  </ul>
-
-  <h3>Project-2: Ferris (DevOps Engineer)</h3>
-  <p>Summary: Ferris, a multimedia broadcasting platform, necessitated an auto-update feature and a temporary testing environment due to its closed nature.</p>
-  <h4>Responsibilities:</h4>
-  <ul>
+    </ul>
+  </div>
+  <div class="project">
+    <h3>Project-2: Ferris (DevOps Engineer)</h3>
+    <p class="highlight">Summary: Ferris, a multimedia broadcasting platform, necessitated an auto-update feature and a temporary testing environment due to its closed nature.</p>
+    <h4>Responsibilities:</h4>
+    <ul>
     <li>Configured Team-City project stages and triggers for updating build registry services</li>
     <li>Deployed deployment-agent services for detecting software updates in Ferris' targets</li>
     <li>Created shell scripts using Vbox-Manage CLI to manage sandbox environments</li>
     <li>Provided status updates via Jira ticketing</li>
-  </ul>
-
-  <h3>Project-3: Transact EU (DevOps Engineer)</h3>
-  <p>Summary: Transact EU, a payment gateway for European merchants, features a Frontend portal for transaction monitoring and management.</p>
-  <h4>Responsibilities:</h4>
-  <ul>
+    </ul>
+  </div>
+  <div class="project">
+    <h3>Project-3: Transact EU (DevOps Engineer)</h3>
+    <p class="highlight">Summary: Transact EU, a payment gateway for European merchants, features a Frontend portal for transaction monitoring and management.</p>
+    <h4>Responsibilities:</h4>
+    <ul>
     <li>Collaborated with the team to address merchant complaints and support investigations</li>
     <li>Contributed to database activities and deployed services using CloudFormation templates</li>
     <li>Monitored logs and infrastructure through Splunk, CloudWatch, and AWS SNS services</li>
     <li>Managed Java artifacts using Jenkins and facilitated merchant onboarding coordination</li>
-  </ul>
+    </ul>
+  </div>
 </body>
 </html>
